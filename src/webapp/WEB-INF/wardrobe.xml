@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  
+  <display-name>wardrobe_wonder</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+	<servlet>
+		<servlet-name>Wlogin</servlet-name>
+		<servlet-class>Wlogin</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Wlogin</servlet-name>
+		<url-pattern>/Wlogin</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>Search</servlet-name>
+		<servlet-class>Search</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>Search</servlet-name>
+		<url-pattern>/Search</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+		<servlet-name>SessionEnd</servlet-name>
+		<servlet-class>SessionEnd</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>SessionEnd</servlet-name>
+		<url-pattern>/SessionEnd</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AddToCart</servlet-name>
+		<servlet-class>AddToCart</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>AddToCart</servlet-name>
+		<url-pattern>/AddToCart</url-pattern>
+	</servlet-mapping>
+	
+	
+	<servlet>
+    <servlet-name>RemoveFromCart</servlet-name>
+    <servlet-class>RemoveFromCart</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+    	<servlet-name>RemoveFromCart</servlet-name>
+    	<url-pattern>/RemoveFromCart</url-pattern>
+	</servlet-mapping>
+
+
+
+
+</web-app>
